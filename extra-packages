@@ -21,5 +21,6 @@ npm
 openssl-devel
 plocate
 ripgrep
+systemd
 wl-clipboard
 zsh
