@@ -6,10 +6,10 @@ LABEL com.github.containers.toolbox="true" \
       maintainer="Dinesh Bhattarai <dineshdb>"
 
 COPY etc/yum.repos.d/ /etc/yum.repos.d/
-COPY extra-packages /
-# todo: use --mount=cache to mount the dnf cache. There is no point in caching the dnf cache in the image
-RUN grep -v '^#' /extra-packages | xargs dnf install -y
-RUN rm /extra-packages
+RUN \
+      --mount=type=cache,target=/var/cache/dnf \
+      --mount=type=bind,source=./extra-packages,target=/extra-packages \
+      grep -v '^#' /extra-packages | xargs dnf install -y
 
 RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
