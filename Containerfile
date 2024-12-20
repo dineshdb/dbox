@@ -17,8 +17,6 @@ RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/flatpak && \ 
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/podman && \
-      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/rpm-ostree && \
-      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/distrobox-init && \
-      ln -fs /usr/local/bin/distrobox-init /usr/bin/entrypoint && \
+      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/dnf && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/transactional-update
      
