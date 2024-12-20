@@ -12,7 +12,6 @@ jq
 just
 make
 mold
-neofetch
 openssl-devel
 ripgrep
 wl-clipboard
