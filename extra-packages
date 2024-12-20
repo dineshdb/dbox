@@ -11,16 +11,9 @@ helix
 jq
 just
 make
-micro
 mold
-ncdu
-ncurses
 neofetch
-neovim
-npm
 openssl-devel
-plocate
 ripgrep
-systemd
 wl-clipboard
 zsh
